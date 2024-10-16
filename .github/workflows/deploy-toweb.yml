@@ -8,8 +8,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
     steps:
+    - name: checkout
+      uses: actions/checkout@v4
     - name: copy file to server
       uses: appleboy/scp-action@v0.1.7
       with:
