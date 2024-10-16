@@ -10,11 +10,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@v1.1.0
+    - name: copy file to server
+      uses: appleboy/scp-action@v0.1.7
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script: whoami
+        source: apps/*
+        target: ${{ secrets.APPROOT }}
