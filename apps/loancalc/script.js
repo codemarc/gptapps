@@ -72,7 +72,7 @@ function renderAmortizationTable() {
     const pageData = amortizationData.slice(startIndex, endIndex);
 
     let tableHTML = `
-        <table>
+        <table class="responsive-container">
             <tr>
                 <th>Month</th>
                 <th>Payment</th>
