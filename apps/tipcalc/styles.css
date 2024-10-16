@@ -60,3 +60,33 @@ button:hover {
     font-weight: bold;
     margin-top: 1rem;
 }
+
+.responsive-container {
+    max-width: 600px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.responsive-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.responsive-buttons button {
+    flex: 1 0 calc(33.333% - 10px);
+    max-width: calc(33.333% - 10px);
+}
+
+.responsive-slider {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .responsive-buttons button {
+        flex: 1 0 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
