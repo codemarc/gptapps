@@ -1,3 +1,4 @@
+lastTipAmount = 0
 
 function calculateTip(tipAmount) {
     lastTipAmount = tipAmount;
@@ -65,7 +66,7 @@ function calculateTip(tipAmount) {
 
 function updatePeopleCount() {
     const peopleCount = document.getElementById('people').value;
-    document.getElementById('peopleCount').textContent = peopleCount;
-    calculateTip(lastTipAmount);
+    document.getElementById('peopleCount').textContent = peopleCount + ((peopleCount == 1) ? ' way' : ' ways')
+    if (lastTipAmount > 0) calculateTip(lastTipAmount)
 }
 
