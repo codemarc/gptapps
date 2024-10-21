@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hourly to Yearly Salary Converter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1 onclick="location.reload()">Salary Converter</h1>
+    <form id="salary-form">
+      <div class="form-row">
+        <label for="mode-toggle">Calculate from:</label>
+        <select id="mode-toggle" onchange="toggleMode()">
+          <option value="hourly">Hourly Rate</option>
+          <option value="yearly">Gross Yearly Salary</option>
+        </select>
+
+        <div id="hourly-inputs">
+          <input type="number" id="hourly-rate" step="0.01" value="100">
+        </div>
+
+        <div id="yearly-inputs" style="display: none;">
+          <input type="number" id="gross-yearly-salary" step="0.01" value="100000">
+        </div>
+      </div>
+      <br />
+      <label for="location">State of Residence:</label>
+      <select id="location">
+        <option value="default" data-tax="20">Select Location</option>
+        <option value="alabama" data-tax="5">Alabama</option>
+        <option value="alaska" data-tax="0">Alaska</option>
+        <option value="arizona" data-tax="4">Arizona</option>
+        <option value="arkansas" data-tax="6">Arkansas</option>
+        <option value="california" data-tax="30">California</option>
+        <option value="colorado" data-tax="4.63">Colorado</option>
+        <option value="connecticut" data-tax="6.99">Connecticut</option>
+        <option value="delaware" data-tax="6.6">Delaware</option>
+        <option value="florida" data-tax="0">Florida</option>
+        <option value="georgia" data-tax="5.75">Georgia</option>
+        <option value="hawaii" data-tax="8.25">Hawaii</option>
+        <option value="idaho" data-tax="6.925">Idaho</option>
+        <option value="illinois" data-tax="4.95">Illinois</option>
+        <option value="indiana" data-tax="3.23">Indiana</option>
+        <option value="iowa" data-tax="8.53">Iowa</option>
+        <option value="kansas" data-tax="5.7">Kansas</option>
+        <option value="kentucky" data-tax="5">Kentucky</option>
+        <option value="louisiana" data-tax="6">Louisiana</option>
+        <option value="maine" data-tax="7.15">Maine</option>
+        <option value="nevada" data-tax="0">Nevada</option>
+        <option value="new-hampshire" data-tax="0">New Hampshire</option>
+        <option value="new-jersey" data-tax="10.75">New Jersey</option>
+        <option value="new-mexico" data-tax="4.9">New Mexico</option>
+        <option value="new-york" data-tax="25">New York</option>
+        <option value="north-carolina" data-tax="5.25">North Carolina</option>
+        <option value="north-dakota" data-tax="2.9">North Dakota</option>
+        <option value="ohio" data-tax="4.797">Ohio</option>
+        <option value="oklahoma" data-tax="5">Oklahoma</option>
+        <option value="oregon" data-tax="9.9">Oregon</option>
+        <option value="pennsylvania" data-tax="3.07">Pennsylvania</option>
+        <option value="rhode-island" data-tax="5.99">Rhode Island</option>
+        <option value="south-carolina" data-tax="7">South Carolina</option>
+        <option value="south-dakota" data-tax="0">South Dakota</option>
+        <option value="tennessee" data-tax="0">Tennessee</option>
+        <option value="texas" data-tax="15">Texas</option>
+        <option value="utah" data-tax="4.95">Utah</option>
+        <option value="vermont" data-tax="8.75">Vermont</option>
+        <option value="virginia" data-tax="5.75">Virginia</option>
+        <option value="washington" data-tax="0">Washington</option>
+        <option value="west-virginia" data-tax="6.5">West Virginia</option>
+        <option value="wisconsin" data-tax="7.65">Wisconsin</option>
+        <option value="wyoming" data-tax="0">Wyoming</option>
+      </select>
+
+      <div id="hourly-controls">
+
+        <div class="form-row">
+          <label for="vacation-days">Vacation Days:</label>
+          <input class="bla" type="range" id="vacation-days" min="0" max="30" value="0">
+        </div>
+        <div class="blab"><span id="vacation-days-value">0</span><span> days</span></div>
+
+        <div class="form-row">
+          <label for="overtime-hours">Overtime Hours per Week:</label>
+          <input class="bla" type="range" id="overtime-hours" min="0" max="20" value="0">
+        </div>
+        <div class="blab"><span id="overtime-hours-value">0</span><span> hours</span></div>
+
+      </div>
+
+      <div class="form-row">
+        <button type="button" onclick="calculateSalary()">Calculate</button>
+      </div>
+    </form>
+    <div id="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
