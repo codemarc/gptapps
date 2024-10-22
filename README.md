@@ -7,8 +7,19 @@ Other tools used:
 - https://code.visualstudio.com/download
 - https://gchq.github.io/CyberChef/
 
+## apps
 
-## loancalc 
+After I created third app listed below I thought it might be time to create a landing page for this work MyGPT Web Apps.
+So in the sprit of the project I created a landing page for this work.
+
+> create a beautiful web page the follows the style of the webapps found in apps folder and acts as a landing page for all these apps.
+
+> can you create me an icons for the loan calc app, the tip calc app, and the pay calc app
+
+<img src="apps/apps.png" width="450px" />
+
+
+### loancalc 
 
 This is the recipe that I used to create the loan calculator, it is a simple web application that allows the user to input a loan amount, interest rate, and loan term and then calculates the monthly payment. I started with a simple prompt and then used the chatgpt api to generate the code. In this case I used sourcegraph's cody inside of vscode see https://marketplace.visualstudio.com/items?itemName=sourcegraph.cody-ai and started with this prompt:
 

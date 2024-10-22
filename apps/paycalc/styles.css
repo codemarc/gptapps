@@ -94,3 +94,7 @@ th {
   padding: 10px;
   background: #fff;
 }
+.qr>img {
+  width: 10px;
+  height: auto;
+}
