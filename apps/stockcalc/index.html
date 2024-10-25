@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Picker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Stock Picker</h1>
+    <div class="strategy-selector">
+      <h2>Select Your Investment Strategy</h2>
+      <select id="strategySelect">
+        <option value="">Choose a Strategy...</option>
+        <option value="shortedStocks">Most Shorted Stocks</option>
+        <option value="shortSqueeze">Short Squeeze Potential</option>
+        <option value="weeklyEarningsGapUp">Weely Earnings Gap Up</option>
+        <option value="earnings">Earnings Play</option>
+        <option value="technical">Technical Analysis</option>
+        <option value="fundamental">Fundamental Analysis</option>
+        <option value="growth">Growth Stocks</option>
+        <option value="value">Value Stocks</option>
+      </select>
+    </div>
+
+    <div class="criteria-container">
+      <div id="criteriaDisplay"></div>
+    </div>
+
+    <div class="screener-link">
+      <a id="finvizLink" href="" target="_blank" class="button">View Stocks on FinViz</a>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

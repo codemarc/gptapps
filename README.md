@@ -49,3 +49,8 @@ This is a simple web application that converts an hourly pay rate to a yearly eq
 
 <img src="apps/paycalc/paycalc1.png" width="450px" />
 
+
+### stockcalc
+
+> create a web application the helps the user pick a stock to buy. Use the reddit post https://www.reddit.com/r/investing/comments/lglskh/collection_of_finviz_screeners/
+for the stock screener. create anther icon the stoc calc app

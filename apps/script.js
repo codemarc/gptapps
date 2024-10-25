@@ -1,7 +1,7 @@
 const apps = [
   {
     name: "Loan Calc",
-    description: "Calculate loan payments",
+    description: "calculate loan payments",
     url: "loancalc/",
     qr: "loancalc/loancalc.png",
     icon: `
@@ -15,7 +15,7 @@ const apps = [
   },
   {
     name: "Tip Calc",
-    description: "Calculate tip amounts",
+    description: "calculate tip amounts",
     url: "tipcalc/",
     qr: "tipcalc/tipcalc.png",
     icon: `
@@ -27,7 +27,7 @@ const apps = [
   },
   {
     name: "Pay Calculator",
-    description: "Perform quick pay calculations",
+    description: "quick pay calculations",
     url: "paycalc",
     qr: "paycalc/paycalc.png",
     icon: `
@@ -36,7 +36,22 @@ const apps = [
   <text x="12" y="16" font-family="Arial" font-size="14" fill="white" text-anchor="middle">PAY</text>
   <path d="M6 7h12M6 11h12M6 15h12" stroke="white" stroke-width="2"/>
 </svg>`
+  },
+  {
+    name: "Stock Calculator",
+    description: "picks by calculated strategy",
+    url: "stockcalc",
+    qr: "stockcalc/stockcalc.png",
+    icon: `
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="20" fill="#2196F3"/>
+    <path d="M20 70 L40 50 L60 65 L80 30" stroke="white" stroke-width="6" fill="none"/>
+    <circle cx="40" cy="50" r="4" fill="white"/>
+    <circle cx="60" cy="65" r="4" fill="white"/>
+    <circle cx="80" cy="30" r="4" fill="white"/>
+</svg>`
   }
+
   // Add more apps as needed
 ]
 
