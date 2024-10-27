@@ -26,7 +26,7 @@ const apps = [
 </svg>`
   },
   {
-    name: "Pay Calculator",
+    name: "Pay Calc",
     description: "quick pay calculations",
     url: "paycalc",
     qr: "paycalc/paycalc.png",
@@ -38,7 +38,7 @@ const apps = [
 </svg>`
   },
   {
-    name: "Stock Calculator",
+    name: "Stock Calc",
     description: "picks by calculated strategy",
     url: "stockcalc",
     qr: "stockcalc/stockcalc.png",
