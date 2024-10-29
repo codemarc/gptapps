@@ -56,3 +56,11 @@ This is a simple web application that converts an hourly pay rate to a yearly eq
 for the stock screener. create anther icon the stoc calc app
 
 <img src="apps/stockcalc/stockcalc1.png" width="450px" />
+
+## vids
+
+> create a new webapp that plays a video mp4 format
+
+<!-- Since my work with generative pretrained transformers is all about the apps, I thought it might be interesting to create a video of the apps in action. So I created a video of the apps in action.
+
+> create a video of the apps in action. -->
