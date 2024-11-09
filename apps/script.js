@@ -50,6 +50,29 @@ const apps = [
     <circle cx="60" cy="65" r="4" fill="white"/>
     <circle cx="80" cy="30" r="4" fill="white"/>
 </svg>`
+  },
+  {
+    name: "Poll Calc",
+    description: "calculate survey results",
+    url: "pollcalc",
+    qr: "pollcalc/pollcalc.png",
+    icon: `
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" fill="#4CAF50" rx="12"/>
+    <g fill="#ffffff">
+        <!-- Poll bars -->
+        <rect x="25" y="25" width="50" height="9" rx="2"/>
+        <rect x="25" y="41" width="37" height="9" rx="2"/>
+        <rect x="25" y="57" width="20" height="9" rx="2"/>
+        <rect x="25" y="73" width="28" height="9" rx="2"/>
+        
+        <!-- Percentage labels -->
+        <text x="78" y="31" font-family="Arial" font-size="6" text-anchor="start">75%</text>
+        <text x="65" y="47" font-family="Arial" font-size="6" text-anchor="start">50%</text>
+        <text x="48" y="63" font-family="Arial" font-size="6" text-anchor="start">20%</text>
+        <text x="58" y="79" font-family="Arial" font-size="6" text-anchor="start">35%</text>
+    </g>
+</svg>`
   }
 
   // Add more apps as needed

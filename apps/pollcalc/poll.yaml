@@ -1,0 +1,44 @@
+poll: Unemployment
+version: '1.0'
+questions:
+  - question: 
+      text: What is your age group?
+      type: multiple
+      choices:
+        - 18-24 years
+        - 25-34 years
+        - 35-44 years
+        - 45-54 years
+        - 55-64 years
+        - 65+ years
+  - question:
+      text: What is your gender?
+      type: multiple
+      choices:
+        - Male
+        - Female
+        - Other
+  - question:
+      text: How many years of work experience do you have?
+      type: multiple
+      choices:
+        - Less than 1 year
+        - 1-3 years
+        - 4-7 years
+        - 8-15 years
+        - 16-25 years
+        - 26-35 years
+        - 36+ years
+  - question:
+      text: How long have you been looking for work?
+      type: multiple
+      choices:
+        - Less than 1 month
+        - 1-3 months
+        - 4-6 months
+        - 7-12 months
+        - 1-2 years
+        - Over 2 years
+  - question:
+      text: What job title are you targeting?
+      type: open

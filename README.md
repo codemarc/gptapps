@@ -64,3 +64,9 @@ for the stock screener. create anther icon the stoc calc app
 <!-- Since my work with generative pretrained transformers is all about the apps, I thought it might be interesting to create a video of the apps in action. So I created a video of the apps in action.
 
 > create a video of the apps in action. -->
+
+## pollcalc
+
+> create a web app that allows the user to create a poll. The poll is created from a yaml file and the results should be stored in a json formatted file. the name of the poll is the name of the yaml file (without the extension). A poll is a yaml file with a question and multiple choices. The user can then share the poll with others. The user can then vote on the poll. The user can then see the results of the poll.
+
+This didnt work out well so I switched to survey monkey and wrapped it in mt web app code, the result pollcalc.
