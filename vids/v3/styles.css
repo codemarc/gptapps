@@ -21,7 +21,7 @@ h1 {
 
 .video-wrapper {
   width: 100%;
-  margin: 20px 0;
+  margin: 16px 0;
 }
 
 video {
@@ -66,7 +66,7 @@ input[type="file"] {
   display: flex;
   justify-content: center;
   gap: 10px;
-  font-size: larger;
+  font-size: smaller;
 }
 
 .links a {
@@ -79,4 +79,14 @@ input[type="file"] {
 
 .links a:hover {
   text-decoration: underline solid 2px #0995e7;
+}
+#top .right {
+  float: right;
+  margin-right: 22px
+}
+
+#top a:visited {
+  text-decoration: underline solid 2px #0995e7;
+  opacity: 0.85;
+  color: darkgreen
 }

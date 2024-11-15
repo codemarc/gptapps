@@ -8,7 +8,7 @@ document.getElementById('videoInput').addEventListener('change', function (e) {
 
 document.addEventListener('DOMContentLoaded', function () {
   const video = document.getElementById('videoPlayer')
-  video.src = './video.mp4'
+  video.src = './MyPod-VEED.mp4'
   const fileInput = document.getElementById('videoInput')
   fileInput.style.display = 'none'
 
