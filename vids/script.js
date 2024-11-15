@@ -21,6 +21,14 @@ const apps = [
     url: "v2/",
     qr: "v2/v2.png",
     icon: deficon
+  },
+  {
+    name: "All About Me",
+    description: "https://codemarc.net",
+    dlink: "#",
+    url: "v3/",
+    qr: "v3/v3.png",
+    icon: deficon
   }
   // Add more vids as needed
 ]
