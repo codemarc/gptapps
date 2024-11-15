@@ -7,11 +7,11 @@ const deficon = `<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http
 
 const apps = [
   {
-    name: "For Richie",
-    description: "made with videogen.io",
-    dlink: "https://videogen.io/?via=codemarc",
-    url: "v1/",
-    qr: "v1/v1.png",
+    name: "All About Me",
+    description: "https://codemarc.net",
+    dlink: "#",
+    url: "v3/",
+    qr: "v3/v3.png",
     icon: deficon
   },
   {
@@ -23,13 +23,13 @@ const apps = [
     icon: deficon
   },
   {
-    name: "All About Me",
-    description: "https://codemarc.net",
-    dlink: "#",
-    url: "v3/",
-    qr: "v3/v3.png",
+    name: "For Richie",
+    description: "made with videogen.io",
+    dlink: "https://videogen.io/?via=codemarc",
+    url: "v1/",
+    qr: "v1/v1.png",
     icon: deficon
-  }
+  },
   // Add more vids as needed
 ]
 
