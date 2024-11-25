@@ -73,7 +73,28 @@ const apps = [
         <text x="58" y="79" font-family="Arial" font-size="6" text-anchor="start">35%</text>
     </g>
 </svg>`
+  },
+  {
+    name: "TodoMenuBar",
+    description: "macos todo app",
+    url: "todo/",
+    icon: `
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" fill="#9C27B0" rx="12"/>
+        <g fill="white">
+            <!-- Checkmark -->
+            <path d="M30 50 L45 65 L70 35" stroke="white" stroke-width="6" fill="none"/>
+            
+            <!-- Todo lines -->
+            <rect x="25" y="20" width="50" height="4" rx="2"/>
+            <rect x="25" y="75" width="50" height="4" rx="2"/>
+            
+            <!-- Menu bar indicator -->
+            <rect x="40" y="85" width="20" height="3" rx="1.5"/>
+        </g>
+    </svg>`
   }
+
 
   // Add more apps as needed
 ]
