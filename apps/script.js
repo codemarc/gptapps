@@ -93,8 +93,19 @@ const apps = [
             <rect x="40" y="85" width="20" height="3" rx="1.5"/>
         </g>
     </svg>`
+  },
+  {
+    name: "Donuts Calc",
+    description: "from the donuts with 💜",
+    url: "donuts/",
+    qr: "donuts/donuts.png",
+    icon: `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100">
+  <circle cx="12" cy="12" r="10" fill="#FA4616"/>
+  <text x="12" y="17" font-family="Arial" font-size="14" fill="#0021A5" text-anchor="middle">TIP</text>
+  <path d="M8 8l8 8M16 8l-8 8" stroke="#0021A5" stroke-width="2"/>
+</svg>`
   }
-
 
   // Add more apps as needed
 ]

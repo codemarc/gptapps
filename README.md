@@ -1,5 +1,4 @@
-# gptapps
-The apps were all created using generative pretrained transformers
+# 🍩 Donut Tip Calculator
 
 Other tools used:
 - https://sourcegraph.com/cody
@@ -57,6 +56,21 @@ for the stock screener. create anther icon the stoc calc app
 
 <img src="apps/stockcalc/stockcalc1.png" width="450px" />
 
+
+## pollcalc
+
+> create a web app that allows the user to create a poll. The poll is created from a yaml file and the results should be stored in a json formatted file. the name of the poll is the name of the yaml file (without the extension). A poll is a yaml file with a question and multiple choices. The user can then share the poll with others. The user can then vote on the poll. The user can then see the results of the poll.
+
+This didnt work out well so I switched to survey monkey and wrapped it in mt web app code, the result pollcalc.
+
+
+## donuts
+
+> create a web app that is a tip calculator for the donuts.
+
+<img src="apps/donuts/donuts1.png" height="250px" />
+
+
 ## vids
 
 > create a new webapp that plays a video mp4 format
@@ -64,9 +78,3 @@ for the stock screener. create anther icon the stoc calc app
 <!-- Since my work with generative pretrained transformers is all about the apps, I thought it might be interesting to create a video of the apps in action. So I created a video of the apps in action.
 
 > create a video of the apps in action. -->
-
-## pollcalc
-
-> create a web app that allows the user to create a poll. The poll is created from a yaml file and the results should be stored in a json formatted file. the name of the poll is the name of the yaml file (without the extension). A poll is a yaml file with a question and multiple choices. The user can then share the poll with others. The user can then vote on the poll. The user can then see the results of the poll.
-
-This didnt work out well so I switched to survey monkey and wrapped it in mt web app code, the result pollcalc.

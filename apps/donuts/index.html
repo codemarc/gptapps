@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Donut Tip Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container responsive-container gradient-container">
+        <h1>🍩 Donut Tip Calculator 🍩</h1>
+        <h2>needed for when we are not at the douse</h2>
+        <div class="input-group">
+            <input type="number" 
+                   id="bill" 
+                   min="0" 
+                   step="0.01" 
+                   inputmode="decimal" 
+                   pattern="[0-9]*[.,]?[0-9]*"
+                   placeholder="Enter the Total" 
+                   class="responsive-input">
+            <button id="calcButton" onclick="handleCalculate()" class="calc-button">
+                Calculate 💰
+            </button>
+        </div>
+        <h2>Sweeten The Tip</h2>
+        <div class="tip-options">
+            <div class="fixed-tips responsive-buttons">
+                <button onclick="calculateTip(5)">$5</button>
+                <button onclick="calculateTip(10)">$10</button>
+                <button onclick="calculateTip(20)">$20</button>
+            </div>
+            <div class="percentage-tip-container">
+                <label for="tipPercentage">Tip Percentage: <span id="tipValue">15%</span></label>
+                <input type="range" 
+                       id="tipPercentage" 
+                       min="15" 
+                       max="22" 
+                       value="15" 
+                       step="1" 
+                       class="tip-slider"
+                       oninput="updateTipPercentage(this.value)">
+                <div class="slider-labels">
+                    <span>15%</span>
+                    <span>22%</span>
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="people">Split the Dozen</label>
+            <input type="range" id="people" min="1" max="11" value="1" oninput="updatePeopleCount()" class="responsive-slider">
+            <div id="peopleCount">1 way</div>
+        </div>
+        <div id="result" class="result"></div>
+        <div class="branding">Brought to your favorite sisters 💜</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
