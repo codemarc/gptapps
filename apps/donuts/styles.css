@@ -12,39 +12,40 @@ body {
 
 .container {
     background-color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 33, 165, 0.15);
     position: relative;
     border: 3px solid #FA4616;
+    max-width: 400px;
 }
 
 h1 {
     text-align: center;
     color: #0021A5;
-    margin-bottom: 1.5rem;
-    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
 }
 
 h1 + h2 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-style: italic;
     color: #FA4616;
-    margin-top: -1rem;
-    margin-bottom: 1.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
     text-align: center;
     color: #FA4616;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .input-group {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .tip-options {
@@ -146,10 +147,11 @@ button:hover {
 
 .branding {
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: #0021A5;
     font-style: italic;
     font-weight: bold;
+    font-size: 0.9rem;
 }
 
 .responsive-slider {
@@ -173,8 +175,8 @@ button:hover {
 }
 
 .percentage-tip-container {
-    margin: 2rem 0;
-    padding: 1rem;
+    margin: 1rem 0;
+    padding: 0.8rem;
     background-color: rgba(250, 70, 22, 0.05);
     border-radius: 15px;
 }
@@ -233,7 +235,7 @@ button:hover {
 }
 
 .fixed-tips {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
     display: flex;
     justify-content: space-between;
     gap: 10px;
@@ -251,10 +253,11 @@ button:hover {
 
 .calc-button {
     background-color: #0021A5;
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1em;
-    margin: 10px 0;
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 10px auto;
+    display: block;
 }
 
 .calc-button:hover {
@@ -272,5 +275,9 @@ button:hover {
     .fixed-tips button {
         max-width: none !important;
         flex: 1 !important;
+    }
+    .calc-button {
+        width: 90%;
+        font-size: 0.9rem;
     }
 }
