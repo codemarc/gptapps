@@ -251,17 +251,31 @@ button:hover {
     max-width: none !important;
 }
 
-.calc-button {
-    background-color: #0021A5;
-    width: 80%;
-    padding: 10px;
-    font-size: 1rem;
-    margin: 10px auto;
-    display: block;
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 10px 0;
 }
 
-.calc-button:hover {
+.calc-button {
+    background-color: #0021A5;
+    width: 60%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.reset-button {
     background-color: #FA4616;
+    width: 20%;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.reset-button:hover {
+    background-color: #0021A5;
 }
 
 @media (max-width: 430px) {
@@ -277,7 +291,30 @@ button:hover {
         flex: 1 !important;
     }
     .calc-button {
-        width: 90%;
+        width: 70%;
         font-size: 0.9rem;
     }
+    
+    .reset-button {
+        width: 25%;
+        font-size: 0.9rem;
+    }
+}
+
+.split-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.split-header label {
+    color: #000;
+    margin-bottom: 0;
+}
+
+#peopleCount {
+    color: #0021A5;
+    font-weight: bold;
+    margin: 0;
 }

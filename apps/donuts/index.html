@@ -19,9 +19,14 @@
                    pattern="[0-9]*[.,]?[0-9]*"
                    placeholder="Enter the Total" 
                    class="responsive-input">
-            <button id="calcButton" onclick="handleCalculate()" class="calc-button">
-                Calculate 💰
-            </button>
+            <div class="button-group">
+                <button id="calcButton" onclick="handleCalculate()" class="calc-button">
+                    Calculate 💰
+                </button>
+                <button onclick="window.location.reload()" class="reset-button">
+                    Reset 
+                </button>
+            </div>
         </div>
         <h2>Sweeten The Tip</h2>
         <div class="tip-options">
@@ -47,9 +52,11 @@
             </div>
         </div>
         <div class="input-group">
-            <label for="people">Split the Dozen</label>
+            <div class="split-header">
+                <label for="people">Split the Dozen</label>
+                <div id="peopleCount">1 way</div>
+            </div>
             <input type="range" id="people" min="1" max="11" value="1" oninput="updatePeopleCount()" class="responsive-slider">
-            <div id="peopleCount">1 way</div>
         </div>
         <div id="result" class="result"></div>
         <div class="branding">Brought to your favorite sisters 💜</div>
