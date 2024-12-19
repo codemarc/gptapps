@@ -70,6 +70,10 @@ This didnt work out well so I switched to survey monkey and wrapped it in mt web
 
 <img src="apps/donuts/donuts1.png" height="250px" />
 
+## passwordcalc
+
+>create a web application the generates passwords. Include options for uppercase letters, owercase letters, numbers, symbolls,and create a slider to for adjustable alues for the password length. the default length should be 12. make sure there is a box to type the length in as a number
+
 
 ## vids
 

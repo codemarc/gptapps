@@ -75,6 +75,37 @@ const apps = [
 </svg>`
   },
   {
+    name: "Donuts Calc",
+    description: "from the donuts with 💜",
+    url: "donuts/",
+    qr: "donuts/donuts.png",
+    icon: `
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100">
+  <circle cx="12" cy="12" r="10" fill="#FA4616"/>
+  <text x="12" y="17" font-family="Arial" font-size="14" fill="#0021A5" text-anchor="middle">TIP</text>
+  <path d="M8 8l8 8M16 8l-8 8" stroke="#0021A5" stroke-width="2"/>
+</svg>`
+  },
+  {
+    name: "Password Calc",
+    description: "password generator",
+    url: "pwdcalc/",
+    qr: "pwdcalc/pwdcalc.png",
+    icon: `
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100" height="100" fill="#2196F3" rx="12"/>
+  <g fill="white">
+    <!-- Lock body -->
+    <rect x="25" y="45" width="50" height="35" rx="4"/>
+    <!-- Lock shackle -->
+    <path d="M40 45 L40 30 Q50 20 60 30 L60 45" stroke="white" stroke-width="6" fill="none"/>
+    <!-- Keyhole -->
+    <circle cx="50" cy="60" r="14"/>
+    <rect x="48" y="60" width="4" height="8"/>
+  </g>
+</svg>`
+  },
+  {
     name: "TodoMenuBar",
     description: "macos todo app",
     url: "todo/",
@@ -92,22 +123,8 @@ const apps = [
             <!-- Menu bar indicator -->
             <rect x="40" y="85" width="20" height="3" rx="1.5"/>
         </g>
-    </svg>`
-  },
-  {
-    name: "Donuts Calc",
-    description: "from the donuts with 💜",
-    url: "donuts/",
-    qr: "donuts/donuts.png",
-    icon: `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="100" height="100">
-  <circle cx="12" cy="12" r="10" fill="#FA4616"/>
-  <text x="12" y="17" font-family="Arial" font-size="14" fill="#0021A5" text-anchor="middle">TIP</text>
-  <path d="M8 8l8 8M16 8l-8 8" stroke="#0021A5" stroke-width="2"/>
-</svg>`
+    </svg >`
   }
-
-  // Add more apps as needed
 ]
 
 function createAppCard(app) {
@@ -118,7 +135,7 @@ function createAppCard(app) {
       <h2>${app.name}</h2>
       <p>${app.description}</p>
       <a href="${app.url}">Open App</a>
-      <div class="qr"><img src="${app.qr}"/></div>
+      <div class="qr">${app.qr ? "<img src=" + app.qr + "/>" : ""} </div >
     `
   return card
 }
