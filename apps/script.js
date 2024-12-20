@@ -127,7 +127,7 @@ const apps = [
   }
 ]
 
-function createAppCard(app) {
+function createAppCard(app) {  
   const card = document.createElement('div')
   card.className = 'app-card'
   card.innerHTML = `
@@ -135,7 +135,7 @@ function createAppCard(app) {
       <h2>${app.name}</h2>
       <p>${app.description}</p>
       <a href="${app.url}">Open App</a>
-      <div class="qr">${app.qr ? "<img src=" + app.qr + "/>" : ""} </div >
+      <div class="qr"><img src="${app.qr}" alt=""></div>
     `
   return card
 }
